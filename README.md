@@ -30,7 +30,7 @@ This project is part of the HNG DevOps Stage 2 task, where I deployed a Dockeriz
    - Enable WSL and install Ubuntu.
    - Update and upgrade packages: sudo apt update && sudo apt upgrade
    - Install Git: sudo apt install git
-   - Clone the project repository: git clone https://github.com/JothamCloud/devops-stage-2.git
+   - Clone the project repository: git clone https://github.com/khingdave/devops-stage-2.git
 
 2. *Install Poetry and PostgreSQL:*
    - Install Poetry: curl -sSL https://install.python-poetry.org | python3 -
@@ -76,12 +76,12 @@ Created Dockerfiles and docker-compose.yml file to containerize the application.
    - Open http://<your-ec2-public-ip>:81 and use default credentials to log in.
 
 2. *Add Proxy Hosts:*
-   - Add configurations for frontend.ajotham.link, db.ajotham.link, and proxy.ajotham.link.
+   - Add configurations for stagetwoapp.strangled.net, db.stagetwoapp.strangled.net, and proxy.stagetwoapp.strangled.net
 
 ## Domain Setup and SSL Configuration
 
 1. *Configure Route 53:*
-   - Set up A records for frontend.ajotham.link, db.ajotham.link, and proxy.ajotham.link.
+   - Set up A records for https://stagetwoapp.strangled.net/login, db.https://stagetwoapp.strangled.net/login, and proxy.https://stagetwoapp.strangled.net/login.
 
 2. *Enable SSL in Nginx Proxy Manager:*
    - Request a new SSL Certificate using Let's Encrypt and enable Force SSL.
@@ -89,9 +89,9 @@ Created Dockerfiles and docker-compose.yml file to containerize the application.
 ## Testing the Setup
 
 1. *Access Application:*
-   - Frontend: https://frontend.ajotham.link
-   - Backend: https://api.ajotham.link
-   - Adminer: https://db.ajotham.link
+   - Frontend: https://https://stagetwoapp.strangled.net
+   - Backend: https://api.stagetwoapp.strangled.net
+   - Adminer: https://db.stagetwoapp.strangled.net
 
 2. *Verify SSL and Redirects:*
    - Ensure connections are secure and redirects are working.
